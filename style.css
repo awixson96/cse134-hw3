@@ -1,0 +1,123 @@
+@import url(https://use.typekit.net/exy5rqf.css);
+
+:root{
+--tiffanyblue: #A9DDD6;
+--slategray: #7A8B99;
+--cadetgray: #91ADC2;
+--coolgray: #9BA0BC;
+--thistle: #C1B8C8;
+}
+
+* {
+    font-family: "obvia", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    text-align: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+
+}
+.navbar li {
+    float: left;
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: var(--thistle);
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar a:hover {
+    background-color: var(--coolgray);
+    color: white;
+}
+main {
+    min-height: 100vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--cadetgray);
+}
+
+input[type=submit] {
+    cursor: pointer;
+    background-color: var(--tiffanyblue);
+    border-style: none;
+    border-radius: 2px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+#row1 {
+    padding: 16px 0px 16px 0px;
+    display: grid;
+    gap: 1rem;
+}
+#message {
+    width: 25%;
+}
+#pin {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.footer ul {
+    list-style-type: none;
+    background-color: var(--thistle);
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0px;
+}
+.footer a {
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    text-align:left;
+}
+#me {
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+@media (min-width:600px) {
+    #row1 {
+        grid-template-columns: 25% 1fr;
+    }
+    .project {
+        grid-template-columns: 25% 1fr;
+    }
+}
+.project {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+.example {
+    width: 100%;
+    object-fit: cover;
+}
+figcaption {
+  text-align: center;
+  font-size: small;
+}
+.project-title {
+    font-size: 2.5rem;
+}
+.description ul {
+    list-style-type: none;
+}
